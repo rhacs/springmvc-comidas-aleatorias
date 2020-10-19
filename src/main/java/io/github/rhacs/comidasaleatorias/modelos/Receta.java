@@ -16,7 +16,7 @@ public class Receta {
     /**
      * Categoría de la {@link Receta}
      */
-    private String categoría;
+    private String categoria;
 
     /**
      * País de origen de la {@link Receta}
@@ -100,8 +100,8 @@ public class Receta {
     /**
      * @return la categoría
      */
-    public String getCategoría() {
-        return categoría;
+    public String getCategoria() {
+        return categoria;
     }
 
     /**
@@ -166,8 +166,8 @@ public class Receta {
     /**
      * @param categoría la categoría a establecer
      */
-    public void setCategoría(String categoría) {
-        this.categoría = categoría;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     /**
@@ -226,7 +226,7 @@ public class Receta {
     public String toString() {
         return String.format(
                 "Receta [nombre=%s, categoría=%s, origen=%s, instrucciones=%s, imagen=%s, video=%s, fuente=%s, etiquetas=%s, ingredientes=%s]",
-                nombre, categoría, origen, instrucciones, imagen, video, fuente, etiquetas, ingredientes);
+                nombre, categoria, origen, instrucciones, imagen, video, fuente, etiquetas, ingredientes);
     }
 
 }
