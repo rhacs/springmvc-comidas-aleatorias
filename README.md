@@ -5,6 +5,15 @@ Debido a la naturaleza de la API utilizada [TheMealDB](https://themealdb.com/api
 
 Siempre puede ser mejor
 
+## Objetivos
+ - [x] El usuario puede presionar un botón para generar una nueva comida aleatoria
+ - [x] La aplicación debe mostrar, a lo menos: **Nombre**, **Ingredientes**, **Instrucciones** e **Imagen** de la receta
+ - [x] Al volver a presionar el botón, mostrar otra receta
+ - [x] Mostrar video de preparación
+
+## Enlaces y recursos
+ - [TheMealDB](https://themealdb.com/api.php)
+
 ## Dependencias
 
 ### Java
