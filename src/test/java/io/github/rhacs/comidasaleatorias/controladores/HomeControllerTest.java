@@ -39,7 +39,7 @@ class HomeControllerTest {
                 .andExpect(status().isOk())
                 // Esperar que la vista devuelta por el controlador se llame "receta"
                 .andExpect(view().name("receta"))
-                // Esperar que la vista contenga un atributo "receta" dentro de su modelo
+                // Esperar que el modelo contenga un atributo "receta"
                 .andExpect(model().attributeExists("receta"))
                 // Esperar que el atributo "receta" del modelo sea un objeto Receta
                 .andExpect(model().attribute("receta", isA(Receta.class)))
