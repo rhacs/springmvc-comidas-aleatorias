@@ -12,7 +12,7 @@ Siempre puede ser mejor
  - [x] Mostrar video de preparación
 
 ## Enlaces y recursos
- - [TheMealDB](https://themealdb.com/api.php)
+ - [TheMealDB API](https://themealdb.com/api.php)
 
 ## Dependencias
 
