@@ -89,7 +89,7 @@ public class HomeController {
             receta.setNombre(jsonNode.get("strMeal").asText());
             receta.setCategoria(jsonNode.get("strCategory").asText());
             receta.setOrigen(jsonNode.get("strArea").asText());
-            receta.setInstrucciones(jsonNode.get("strInstructions").asText());
+            receta.setInstrucciones(jsonNode.get("strInstructions").asText().replaceAll("(\r\n|\n\r|\r|\n)", "<br />"));
             receta.setImagen(jsonNode.get("strMealThumb").asText());
             receta.setVideo(jsonNode.get("strYoutube").asText());
             receta.setFuente(jsonNode.get("strSource").asText());
