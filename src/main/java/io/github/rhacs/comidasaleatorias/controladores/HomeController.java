@@ -76,12 +76,10 @@ public class HomeController {
                 String cantidad = "strMeasure" + i;
 
                 // Verificar que el ingrediente no esté vacío o sea nulo
-                if (jsonNode.get(ingrediente) != null && !jsonNode.get(ingrediente).asText().isEmpty()) {
+                if (jsonNode.get(ingrediente) != null && !jsonNode.get(ingrediente).asText().equals("null")
+                        && !jsonNode.get(ingrediente).asText().isEmpty()) {
                     // Agregar ingrediente a la receta
                     receta.agregarIngrediente(jsonNode.get(ingrediente).asText(), jsonNode.get(cantidad).asText());
-                } else {
-                    // Salir del bucle
-                    break;
                 }
             }
 
